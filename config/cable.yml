@@ -11,5 +11,6 @@ production:
   url: <%= ENV.fetch("REDIS_URL") %>
   channel_prefix: fswd_chatroom_production
   redis_options:
+    ssl: true
     ssl_params:
       verify_mode: OpenSSL::SSL::VERIFY_NONE
